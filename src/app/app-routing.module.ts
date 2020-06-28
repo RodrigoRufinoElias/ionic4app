@@ -50,7 +50,9 @@ const routes: Routes = [
   { path: 'animacoes', loadChildren: './animacoes/animacoes.module#AnimacoesPageModule' },
   { path: 'componentesNativos', loadChildren: './componentes-nativos/componentes-nativos.module#ComponentesNativosPageModule' },
   { path: 'componenteNativoCamera', loadChildren: './componente-nativo-camera/componente-nativo-camera.module#ComponenteNativoCameraPageModule' },
-  { path: 'componenteNativoTextToSpeech', loadChildren: './componente-nativo-text-to-speech/componente-nativo-text-to-speech.module#ComponenteNativoTextToSpeechPageModule' }
+  { path: 'componenteNativoTextToSpeech', loadChildren: './componente-nativo-text-to-speech/componente-nativo-text-to-speech.module#ComponenteNativoTextToSpeechPageModule' },
+  { path: 'ngrx', loadChildren: './ngrx/ngrx.module#NgrxPageModule' },
+
 ];
 
 @NgModule({

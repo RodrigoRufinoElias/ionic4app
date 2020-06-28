@@ -40,6 +40,11 @@ export class AppComponent {
       titulo: 'Componentes Nativos',
       url: '/componentesNativos',
       icone: 'arrow-dropright'
+    },
+    {
+      titulo: 'NGRX Básico',
+      url: '/ngrx',
+      icone: 'arrow-dropright'
     }
   ];
 
