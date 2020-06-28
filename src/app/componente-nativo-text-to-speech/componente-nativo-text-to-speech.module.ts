@@ -1,0 +1,28 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
+import { TextToSpeech } from '@ionic-native/text-to-speech/ngx';
+
+import { IonicModule } from '@ionic/angular';
+
+import { ComponenteNativoTextToSpeechPage } from './componente-nativo-text-to-speech.page';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: ComponenteNativoTextToSpeechPage
+  }
+];
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    RouterModule.forChild(routes)
+  ],
+  providers: [TextToSpeech],
+  declarations: [ComponenteNativoTextToSpeechPage]
+})
+export class ComponenteNativoTextToSpeechPageModule {}
