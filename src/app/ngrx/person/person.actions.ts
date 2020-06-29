@@ -1,5 +1,6 @@
-import { Person } from '../models/person';
 import { Action } from '@ngrx/store';
+
+import { Person } from '../models/person';
 
 // Enum pra mapear cada ação
 export enum PersonActionTypes {
@@ -23,7 +24,11 @@ export class PersonNew implements Action {
 export class PersonUpdate implements Action {
     readonly type = PersonActionTypes.PERSON_UPDATE;
 
-    constructor(public payload: {person: Person}) {}
+    // Para Reducer com Entity
+    constructor(public payload: {id: string, changes: Partial<Person>}) {}
+
+    // Para Reducer sem Entity
+    // constructor(public payload: {person: Person}) {}
 }
 
 export class PersonDelete implements Action {

@@ -6,20 +6,18 @@
   </ion-row>
 
   <ion-row>
-    <ion-col size="12">
+    <ion-col size="8">
       Age: {{ person.age }} - Address: {{ person.address }} - City: {{ person.city }} - Country: {{ person.country }}
     </ion-col>
-  </ion-row>
-
-  <ion-row>
-    <ion-col size="6">
+    
+    <ion-col size="2">
       <ion-button (click)="update.emit(person)" expand="block" color="primary">
         <ion-icon slot="start" name="create"></ion-icon>
         Update
       </ion-button>
     </ion-col>
 
-    <ion-col size="6">
+    <ion-col size="2">
       <ion-button (click)="delete.emit(person)" expand="block" color="primary">
         <ion-icon slot="start" name="trash"></ion-icon>
         Delete
